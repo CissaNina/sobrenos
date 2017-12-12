@@ -1,13 +1,13 @@
 <template>  
   <section>
-    <div class="sobre-txt">
-      <h1>Sobre nós</h1>
-      <p>O ReciclAção propõe estimular e mobilizar a comunidade a
+    <div class="sobre">
+      <h1 class="sobre-title">Sobre nós</h1>
+      <p class="sobre-txt">O ReciclAção propõe estimular e mobilizar a comunidade a
           descartar adequadamente seus materiais recicláveis,
           retirando-os do meio ambiente e dando origem a um ciclo fértil
           e produtivo que retorna em forma de recursos locais, com
           ênfase na educação e na cooperação</p>
-      <p>O Projeto reciclação começou 3 anos após o desabamento do
+      <p class="sobre-txt">O Projeto reciclação começou 3 anos após o desabamento do
           campinho, na Rua Gomes Lopes em 2010, provocado pelo
           temporal e acúmulo de lixo nas encostas.36 pessoas morreram
           e 7 mil ficaram desabrigadas. A partir disso o grupo PROA,
@@ -48,56 +48,56 @@ export default {
 body{
   margin: 0 auto;
   padding: 0 auto;
+  box-sizing: border-box;
+} 
+
+section{
+  width: 100%;/*
+  margin: 0 auto;*/
 }
-    div{
-          display: flex;
-          justify-content: flex-start;
-          flex-direction: column;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-    } 
-      h1{ 
-          
-          font-family: 'Roboto Slab, Bold';
-          color: #00923F;
-          size: 42px;
-          text-align: left;
-          padding-left: 21.32px;
-          margin: 0;
-          font-size: 1.5em;
+
+.sobre{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+} 
+
+.sobre-title{          
+  font-family: 'Roboto Slab, Bold';
+  color: #00923F;
+  margin-left:  15px;
+  font-size: 2.45em;
+  margin-bottom: 0;
+}
+
+.sobre-txt{
+   width: 90%;
+  margin-left: 20px; 
+  margin-bottom: 0;
+  font-family:'Roboto Slab, Regular';
+  font-size: 0.75em;  
+  line-height: 1.25em;
+}
+
+h3{
+  width: 100%;
+  margin-left: 20px;
+  font-family: 'Roboto Slab, Bold';
+  color: #E67816;
+
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #E67816;
+}
+
+
+
+      img{width: 100%;
         }
-      p{
-        font-family:'Roboto Slab, Regular';
-        color: #000000;
-        width:70%;
-        opacity: 100%;
-        padding-left: 21.32px;
-        font-size: 0.75em;
-
-
-      }
-      h3{ font-family: 'Roboto Slab, Bold';
-          color: #E67816;
-          width: 116px ;
-          height:24px ;
-          size:18px;
-          text-align: left;
-          padding-left: 21.32px;
-          font-size: 100%;
-
-
-
-      }
-
-      a:link, a:visited {
-      text-decoration: none;
-  }
-
-    
-
-      img{width: 305px;
-          height:225.21px;  }
 
 
             @media (min-width: 1024px) {
