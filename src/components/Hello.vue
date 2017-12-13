@@ -18,7 +18,7 @@
           doenças como dengue, zica e chikungunya e outras doenças
           causadas por acúmulo de lixo.</p>
           <h3><a href="">Saiba mais >></a></h3>
-        </div>
+      </div>
         <div class="sobre-img">
             <img src="../assets/01.jpg">
         </div>      
@@ -45,15 +45,15 @@ export default {
 </script>
 
 <style>
-body{
+*{
   margin: 0 auto;
   padding: 0 auto;
   box-sizing: border-box;
 } 
 
 section{
-  width: 100%;/*
-  margin: 0 auto;*/
+  width: 100%;
+  
 }
 
 .sobre{
@@ -94,17 +94,22 @@ a:link, a:visited {
   color: #E67816;
 }
 
-
-
-      img{width: 100%;
+img{
+  width: 100%;
         }
 
 
-            @media (min-width: 1024px) {
+            @media (min-width: 768px) {
 
               
               section{
                 display: flex;
+                width: 100%;
+              }
+
+              .sobre{
+                width: 50%;
+                height: 50%;
               }
 
               h1{
@@ -124,13 +129,16 @@ a:link, a:visited {
                   height: 23px;
                   size:44px;
                   font-size: 20px;
-                  }
+                }
+
+              .sobre-img{
+                        display: flex;
+                        align-items: center;
+                        width: 50%;
+              }
 
               img{
-                width: 30%;
-                height: 30%;
-                background:url(../assets/desabamento3.jpg) center center;;
-                background-repeat: no-repeat;
+                width: 100%;
                 } 
 
 
